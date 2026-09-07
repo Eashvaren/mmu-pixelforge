@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelForge Studio</title>
+    <meta name="description" content="PixelForge Studio is a Malaysian web development company helping small businesses build modern, professional, and user-friendly websites.">
+    <title>PixelForge Studio | Web Development for Small Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar">
-            <a href="#home" class="logo">PixelForge<span>Studio</span></a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo" aria-label="PixelForge Studio home">
+                <img src="assets/pixelforge-logo.png" alt="PixelForge Studio" width="1149" height="451">
+            </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </button>
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#process">Process</a></li>
-                <li><a href="#customers">Customers</a></li>
+                <li><a href="#who-we-help">Who We Help</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero" id="home">
+        <section class="hero section-dark" id="home">
             <div class="hero-content">
-                <p class="eyebrow">Web development for small businesses</p>
-                <h1>PixelForge Studio</h1>
+                <p class="eyebrow section-label--dark">Web development for small businesses</p>
+                <h1><span>PixelForge</span> <span class="gradient-text">Studio</span></h1>
                 <p class="hero-text">
                     PixelForge Studio helps small businesses build a strong online presence
-                    through modern, responsive, and user-friendly websites.
+                    through modern, professional, and user-friendly websites.
                 </p>
                 <div class="hero-actions">
                     <a href="#contact" class="primary-button">Start a Project</a>
@@ -44,40 +50,53 @@
 
             <div class="hero-panel" aria-label="PixelForge Studio project summary">
                 <div class="panel-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </div>
                 <div class="panel-body">
-                    <p class="panel-label">Simple website journey</p>
-                    <h2>Tell us what you need.</h2>
-                    <p>We design, build, review, launch, and support your website.</p>
-                    <div class="mini-grid">
-                        <div>Desktop</div>
-                        <div>Mobile</div>
-                        <div>Fast</div>
-                        <div>Friendly</div>
+                    <p class="panel-label">Start your website project</p>
+                    <h2>Build a website that works for your business.</h2>
+                    <p>Choose what you need and see how PixelForge helps turn your idea into a professional online presence.</p>
+                    <div class="mini-grid service-options" aria-label="Website service options">
+                        <div class="service-option is-selected">
+                            <span>Project Type</span>
+                            <strong>Business Website</strong>
+                        </div>
+                        <div class="service-option">
+                            <span>Project Type</span>
+                            <strong>Landing Page</strong>
+                        </div>
+                        <div class="service-option">
+                            <span>Project Type</span>
+                            <strong>Redesign</strong>
+                        </div>
+                        <div class="service-option">
+                            <span>Project Type</span>
+                            <strong>Maintenance</strong>
+                        </div>
                     </div>
+                    <a href="#contact" class="panel-cta">Discuss Your Project</a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="about">
+        <section class="section section-dark" id="about">
             <div class="section-heading">
-                <p class="eyebrow">About us</p>
+                <p class="eyebrow section-label--dark">About us</p>
                 <h2>Professional websites made simple.</h2>
             </div>
             <p class="wide-text">
                 PixelForge Studio is a web development company that designs and develops
                 modern websites for businesses that want to look professional online.
-                The team focuses on clean design, clear information, and websites that
-                work well on both desktop and mobile devices.
+                The team focuses on clean design, clear information, and user-friendly websites
+                that help businesses present themselves professionally online.
             </p>
         </section>
 
-        <section class="section section-muted" id="services">
+        <section class="section section-muted section-dark" id="services">
             <div class="section-heading">
-                <p class="eyebrow">Services</p>
+                <p class="eyebrow section-label--light">Services</p>
                 <h2>What PixelForge Studio offers</h2>
             </div>
 
@@ -118,7 +137,7 @@
                         </svg>
                     </div>
                     <h3>Website Redesign</h3>
-                    <p>Improve an old website with a cleaner design, better layout, and mobile-friendly structure.</p>
+                    <p>Improve an old website with a cleaner design, better layout, clearer information, and a more professional user experience.</p>
                 </article>
                 <article class="card">
                     <div class="card-icon" aria-hidden="true">
@@ -135,9 +154,70 @@
             </div>
         </section>
 
-        <section class="section" id="process">
+        <section class="section section-dark" id="why-pixelforge">
             <div class="section-heading">
-                <p class="eyebrow">Process</p>
+                <p class="eyebrow section-label--dark">Why PixelForge</p>
+                <h2>Why small businesses choose PixelForge.</h2>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="5" width="18" height="13" rx="2"></rect>
+                            <path d="M8 21h8"></path>
+                            <path d="M12 18v3"></path>
+                            <path d="M7 9h10"></path>
+                            <path d="M7 13h6"></path>
+                        </svg>
+                    </div>
+                    <h3>Professional by Design</h3>
+                    <p>Clean, modern websites designed to give your business a strong and credible online presence.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 19V8"></path>
+                            <path d="M4 8l8-4 8 4v11"></path>
+                            <path d="M8 19v-6h8v6"></path>
+                            <path d="M3 19h18"></path>
+                        </svg>
+                    </div>
+                    <h3>Built for Small Businesses</h3>
+                    <p>Straightforward websites without unnecessary complexity.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 5h14v14H5z"></path>
+                            <path d="M8 9h8"></path>
+                            <path d="M8 13h5"></path>
+                            <path d="M15 17l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Clear &amp; User-Friendly</h3>
+                    <p>Websites designed to be easy for customers to navigate and understand.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3v3"></path>
+                            <path d="M12 18v3"></path>
+                            <path d="M4.9 4.9l2.1 2.1"></path>
+                            <path d="M17 17l2.1 2.1"></path>
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M9.5 12.5l1.5 1.5 3.5-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>PixelForge can continue helping with updates and maintenance after launch.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-muted section-dark" id="process">
+            <div class="section-heading">
+                <p class="eyebrow section-label--dark">Process</p>
                 <h2>A clear process from idea to launch</h2>
             </div>
 
@@ -150,7 +230,7 @@
                 <article class="process-step">
                     <span>02</span>
                     <h3>Design &amp; Development</h3>
-                    <p>The team creates a website that matches the client brand and works on desktop and mobile.</p>
+                    <p>PixelForge designs and develops a website that matches the client's brand, business goals, and overall online identity.</p>
                 </article>
                 <article class="process-step">
                     <span>03</span>
@@ -165,9 +245,102 @@
             </div>
         </section>
 
-        <section class="section" id="customers">
+        <section class="section section-muted section-dark" id="sample-projects">
             <div class="section-heading">
-                <p class="eyebrow">Customers</p>
+                <p class="eyebrow section-label--light">Sample Projects</p>
+                <h2>See what PixelForge can create.</h2>
+            </div>
+
+            <div class="card-grid project-grid">
+                <a class="card project-card project-card-link" href="#project-dialog" data-project="brewhaus" aria-haspopup="dialog">
+                    <div class="project-preview" aria-hidden="true">
+                        <div class="preview-window preview-cafe">
+                            <div class="preview-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-hero">
+                                <strong></strong>
+                                <span></span>
+                                <em></em>
+                            </div>
+                            <div class="preview-content">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-footer-row">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-label">Concept Project</p>
+                    <h3>BrewHaus Caf&eacute;</h3>
+                    <p>Business Website</p>
+                    <span class="project-cta">View Concept</span>
+                </a>
+                <a class="card project-card project-card-link" href="#project-dialog" data-project="fitspace" aria-haspopup="dialog">
+                    <div class="project-preview" aria-hidden="true">
+                        <div class="preview-window preview-fitspace">
+                            <div class="preview-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-hero">
+                                <strong></strong>
+                                <span></span>
+                                <em></em>
+                            </div>
+                            <div class="preview-feature-grid">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-cta-strip"></div>
+                        </div>
+                    </div>
+                    <p class="project-label">Concept Project</p>
+                    <h3>FitSpace</h3>
+                    <p>Landing Page</p>
+                    <span class="project-cta">View Concept</span>
+                </a>
+                <a class="card project-card project-card-link" href="#project-dialog" data-project="bloom" aria-haspopup="dialog">
+                    <div class="project-preview" aria-hidden="true">
+                        <div class="preview-window preview-bloom">
+                            <div class="preview-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-split">
+                                <div></div>
+                                <div>
+                                    <strong></strong>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="preview-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-label">Concept Project</p>
+                    <h3>Bloom &amp; Co.</h3>
+                    <p>Website Redesign</p>
+                    <span class="project-cta">View Concept</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="who-we-help">
+            <div class="section-heading">
+                <p class="eyebrow section-label--dark">Who We Help</p>
                 <h2>Built for growing businesses in Malaysia.</h2>
             </div>
 
@@ -221,33 +394,131 @@
             </div>
         </section>
 
-        <section class="section contact-section" id="contact">
+        <section class="section section-dark cta-section" aria-labelledby="cta-heading">
+            <div class="cta-panel">
+                <h2 id="cta-heading">Have a website idea? Let's build it together.</h2>
+                <a href="#contact" class="primary-button">Start Your Project</a>
+            </div>
+        </section>
+
+        <section class="section section-dark contact-section" id="contact">
             <div class="section-heading">
-                <p class="eyebrow">Contact</p>
+                <p class="eyebrow section-label--dark">Contact</p>
                 <h2>Ready to build your website?</h2>
             </div>
 
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                </div>
-                <div class="form-row">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your website idea" required></textarea>
-                </div>
-                <button type="submit" class="primary-button">Send Message</button>
-                <p class="form-message" id="formMessage"></p>
-            </form>
+            <div class="contact-layout">
+                <form class="contact-form" id="contactForm" method="post" novalidate>
+                    <div class="contact-form-header">
+                        <h3>Tell us about your project</h3>
+                        <p>Share a few details about your website idea and PixelForge will get back to you within 1&ndash;2 business days.</p>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required aria-describedby="nameError">
+                        <p class="field-error" id="nameError" aria-live="polite"></p>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-describedby="emailError">
+                        <p class="field-error" id="emailError" aria-live="polite"></p>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your website idea" required aria-describedby="messageError"></textarea>
+                        <p class="field-error" id="messageError" aria-live="polite"></p>
+                    </div>
+                    <button type="submit" class="primary-button" id="submitButton">Send Message</button>
+                    <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+                </form>
+
+                <aside class="contact-info" aria-label="PixelForge Studio contact information">
+                    <div class="contact-info-header">
+                        <h3>PixelForge Studio</h3>
+                        <p>Let's talk about your next website.</p>
+                    </div>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 21s7-5.3 7-12a7 7 0 0 0-14 0c0 6.7 7 12 7 12z"></path>
+                                    <circle cx="12" cy="9" r="2.5"></circle>
+                                </svg>
+                            </span>
+                            <span>Malaysia</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                    <path d="m4 7 8 6 8-6"></path>
+                                </svg>
+                            </span>
+                            <a href="mailto:hello@pixelforgestudio.com">hello@pixelforgestudio.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="8"></circle>
+                                    <path d="M12 8v5l3 2"></path>
+                                </svg>
+                            </span>
+                            <span>Replies within 1&ndash;2 business days</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+                                    <circle cx="12" cy="12" r="3.5"></circle>
+                                    <path d="M17 7h.01"></path>
+                                </svg>
+                            </span>
+                            <a href="https://www.instagram.com/pixelforge.malaysia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @pixelforge.malaysia opens in a new tab">Instagram: @pixelforge.malaysia</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
         </section>
     </main>
 
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="projectDialogTitle" aria-describedby="projectDialogType projectDialogDescription projectDialogFocus">
+        <div class="project-dialog-content">
+            <button class="project-dialog-close" type="button" aria-label="Close project preview">&times;</button>
+            <div class="project-modal-preview" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="project-label">Concept Project</p>
+            <h2 id="projectDialogTitle"></h2>
+            <p class="project-type" id="projectDialogType"></p>
+            <div class="project-dialog-copy">
+                <h3>Description</h3>
+                <p id="projectDialogDescription"></p>
+                <h3>PixelForge Focus</h3>
+                <p id="projectDialogFocus"></p>
+            </div>
+        </div>
+    </dialog>
+
     <footer class="footer">
-        <p>&copy; 2026 PixelForge Studio. Modern websites for small businesses.</p>
+        <div class="footer-inner">
+            <a href="#home" class="footer-logo" aria-label="PixelForge Studio home">
+                <img src="assets/pixelforge-logo.png" alt="PixelForge Studio" width="1149" height="451">
+            </a>
+            <div class="footer-content">
+                <nav aria-label="Footer navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#process">Process</a>
+                    <a href="#who-we-help">Who We Help</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://www.instagram.com/pixelforge.malaysia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @pixelforge.malaysia opens in a new tab">Instagram</a>
+                </nav>
+                <p>&copy; 2026 PixelForge Studio.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
